@@ -6,7 +6,7 @@
     border-radius: 4px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
-    @include text-primary-button();
+    @include text-secondary();
     &:hover {
         color: var(--color-pink);
         background-color: var(--color-white);

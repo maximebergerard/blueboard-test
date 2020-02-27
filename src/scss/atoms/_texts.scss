@@ -1,0 +1,19 @@
+.a-h1 {
+    color: var(--color-black);
+    width: 600px;
+    @include text-title-h1();
+}
+
+.a-card-category {
+    color: var(--color-pink);
+    @include text-secondary();
+}
+
+.a-card-h3 {
+    color: var(--color-black);
+    @include text-title-h3();
+}
+
+.a-card-p {
+    line-height: 1.6rem;
+}

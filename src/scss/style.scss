@@ -5,9 +5,13 @@
 // Variables
 @import "variables/colors";
 
-// Molecules
-@import "molecules/header";
-
 // Atomes
-@import "atomes/texts";
-@import "atomes/buttons";
+@import "atoms/texts";
+@import "atoms/buttons";
+
+// Molecules
+@import "molecules/card-details";
+
+// Organisms
+@import "organisms/header";
+@import "organisms/card";
