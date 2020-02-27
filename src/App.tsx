@@ -1,11 +1,14 @@
 import React from 'react';
-import bckImage from './images/background-header.png';
+import Header from './components/header/header'
+import './scss/style.scss';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>C'est parti</h1>
+      {/* <img src={bckImage} alt="Background"/> */}
+      <Header></Header>
     </div>
   );
 }
