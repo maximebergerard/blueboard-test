@@ -1,0 +1,40 @@
+.a-primary-button {
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    @include text-primary-button();
+    &:hover {
+        color: var(--color-pink);
+        background-color: var(--color-white);
+    }
+}
+
+.a-play-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: var(--color-lightgray);
+    margin-bottom: 50px;
+    transition: 0.75s ease-in-out;
+    cursor: pointer;
+    @include flex-row();
+    &:hover {
+        background-color: var(--color-pink);
+        transform: rotateZ(360deg);
+    }
+    button {
+        border: 0;
+        background: transparent;
+        box-sizing: border-box;
+        height: 18px;
+        border-color: transparent transparent transparent var(--color-white);
+        border-style: solid;
+        border-width: 14px 0 14px 26px;
+        margin-left: 16px;
+        cursor: pointer;
+    }
+}
