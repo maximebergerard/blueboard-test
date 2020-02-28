@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Card } from './components'
+import { Header, Card, FeaturesClass } from './components'
 import './scss/style.scss';
 import img from './images/macbook.png'
 
@@ -14,6 +14,7 @@ function App() {
         image={img}
         className="o-card"
       />
+      <FeaturesClass title="Some awesome features" category="new features"/>
       <Card 
         category="new design" 
         title="Responsive design just need your tap ..."

@@ -9,7 +9,7 @@
     @include text-secondary();
     &:hover {
         color: var(--color-pink);
-        background-color: var(--color-white);
+        background-color: var(--color-lightgray);
     }
 }
 
@@ -17,7 +17,7 @@
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    background-color: var(--color-lightgray);
+    background-color: var(--color-gray);
     margin-bottom: 50px;
     transition: 0.75s ease-in-out;
     cursor: pointer;
