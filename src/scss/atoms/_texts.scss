@@ -17,3 +17,13 @@
 .a-paragraph {
     line-height: 1.6rem;
 }
+
+.a-list-title {
+    margin-bottom: 16px;
+    @include text-list-title();
+}
+
+.a-list-body {
+    line-height: 1.6rem;
+    @include text-list-body();
+}

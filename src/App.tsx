@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Card, FeaturesClass } from './components'
 import './scss/style.scss';
-import img from './images/macbook.png'
+import { macbook } from './images'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         category="new design" 
         title="There is no other platform for you ..."
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis alias nulla autem accusantium temporibus at odit asperiores quam sint, adipisci ad distinctio? Mollitia officiis labore corporis, numquam repellat earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis alias nulla autem accusantium temporibus at odit asperiores quam sint, adipisci ad distinctio? Mollitia officiis labore corporis, numquam repellat earum!"
-        image={img}
+        image={macbook}
         className="o-card"
       />
       <FeaturesClass title="Some awesome features" category="new features"/>
@@ -19,7 +19,7 @@ function App() {
         category="new design" 
         title="Responsive design just need your tap ..."
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis alias nulla autem accusantium temporibus at odit asperiores quam sint, adipisci ad distinctio? Mollitia officiis labore corporis, numquam repellat earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis alias nulla autem accusantium temporibus at odit asperiores quam sint, adipisci ad distinctio? Mollitia officiis labore corporis, numquam repellat earum!"
-        image={img}
+        image={macbook}
         className="o-card-reverse"
       />
     </div>

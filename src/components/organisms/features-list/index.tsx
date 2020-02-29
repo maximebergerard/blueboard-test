@@ -1,5 +1,8 @@
 import React from 'react'
 import useFeatureService from './api'
+import { feature1, feature2, feature3, penHolder, earphones } from '../../../images'
+
+const images = [feature1, feature2, feature3]
 
 export type Props = {
     title: string;
@@ -11,19 +14,33 @@ const Features: React.FC<Props> = ({ title, category }) => {
 
     return (
         <div className="o-features-list">
+            <div className="m-features-images">
+                <img src={penHolder} alt="pen holder"/>
+                <img src={earphones} alt="earphones"/>
+            </div>
             <span className="a-category">{category}</span>
             <h3 className="a-h3">{title}</h3>
-            {service.status === 'loading' && <div>Loading...</div>}
-            {service.status === 'loaded' && service.payload
-                .slice(-3)
-                .map((feature => (
-                    <ul key={feature.id}>
-                        <li>{feature.title}</li>
+            <div className="m-features-items">
+                {images.map(images => (
+                    <ul key={images} className="a-features-list">
+                        <li><img src={images} alt="features"/></li>
                     </ul>
-                )))}
-            {service.status === 'error' && (
-                <div>Cannot fetch datas </div>
-            )}
+                ))}
+            </div>
+            <div className="m-features-items">
+                {service.status === 'loading' && <div>Loading...</div>}
+                {service.status === 'loaded' && service.payload
+                    .slice(4, 7)
+                    .map((feature => (
+                        <ul key={feature.id} className="a-features-list">
+                            <li className="a-list-title">{feature.title}</li>
+                            <li className="a-list-body">{feature.body}</li>
+                        </ul>
+                    )))}
+                {service.status === 'error' && (
+                    <div>Cannot fetch datas </div>
+                )}
+            </div>
 
         </div>
     )

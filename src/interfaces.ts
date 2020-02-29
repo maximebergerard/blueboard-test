@@ -12,12 +12,6 @@ export type CardInterface = {
     className?: string;
 }
 
-// // Features props types
-// export type FeatureProps = {
-//     title: string;
-//     category: string;
-// }
-
 // Features API interface
 export interface Feature {
     title: string;

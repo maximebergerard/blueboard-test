@@ -13,4 +13,21 @@
     flex-flow: column;
 }
 
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 

@@ -16,3 +16,12 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
+
+@mixin text-list-title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@mixin text-list-body {
+    font-size: 1.2rem;
+}
