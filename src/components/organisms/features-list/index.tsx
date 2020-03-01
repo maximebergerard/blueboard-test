@@ -19,7 +19,7 @@ const Features: React.FC<Props> = ({ title, category }) => {
                 <img src={earphones} alt="earphones"/>
             </div>
             <span className="a-category">{category}</span>
-            <h3 className="a-h3">{title}</h3>
+            <h3 className="a-h3-black">{title}</h3>
             <div className="m-features-items">
                 {images.map(images => (
                     <ul key={images} className="a-features-list">

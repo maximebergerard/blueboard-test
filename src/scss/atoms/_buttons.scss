@@ -1,12 +1,15 @@
 .a-primary-button {
     color: var(--color-white);
     background-color: var(--color-pink);
-    padding: 20px 60px;
+    width: 260px;
+    padding: 16px;
+    margin: 16px 0;
     border: none;
     border-radius: 4px;
     transition: 0.2s ease-in-out;
+    letter-spacing: 0.2rem;
     cursor: pointer;
-    @include text-secondary();
+    @include text-button();
     &:hover {
         color: var(--color-pink);
         background-color: var(--color-lightgray);

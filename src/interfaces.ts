@@ -1,15 +1,22 @@
 // Button props types
-export type ButtonInterface = {
+export type ButtonType = {
     text: string;
 }
 
 // Card props type
-export type CardInterface = {
+export type CardType = {
     category: string;
     title: string;
     paragraph: string;
     image?: string;
     className?: string;
+}
+
+// Form interface
+export interface Input {
+    name: string;
+    mail: string;
+    password: string;
 }
 
 // Features API interface

@@ -1,9 +1,18 @@
 import React from 'react'
-import { ButtonInterface } from '../../../interfaces'
+import { ButtonType } from '../../../interfaces'
 
 
-export default (props: ButtonInterface) => {
+export default (props: ButtonType) => {
     return (
-        <button className="a-primary-button">{props.text}</button>
+        <button 
+            className="a-primary-button" 
+            onClick={() => {
+                window.scrollTo({
+                    top: 4000,
+                    behavior: 'smooth'
+                })
+            }}>
+                {props.text}
+        </button>
     )
 }

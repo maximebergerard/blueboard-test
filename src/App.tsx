@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Card, FeaturesClass } from './components'
+import { Header, Card, FeaturesClass, Form, Footer, } from './components'
 import './scss/style.scss';
 import { macbook } from './images'
 
@@ -22,6 +22,8 @@ function App() {
         image={macbook}
         className="o-card-reverse"
       />
+      <Form />
+      <Footer />
     </div>
   );
 }
