@@ -1,9 +1,0 @@
-.o-features-list {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 160px 0;
-    position: relative;
-    background-color: var(--color-lightgray);
-    overflow: hidden;
-    @include flex-column();
-}

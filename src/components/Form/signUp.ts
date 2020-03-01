@@ -1,25 +1,23 @@
 import { useState } from 'react';
-import { Input } from '../../interfaces'
+import { Form } from '../../interfaces'
 
 const useSignUpForm = () => {
-    const [inputValue, setInputValue] = useState<Input>({
+    const [inputValue, setInputValue] = useState<Form>({
         name: '',
         mail: '',
         password: '',
     })
-    const handleSubmit = (event: any) => {
-        if (event) {
-            alert(`Designer Created !
-                Name: ${inputValue.name}
-                Email: ${inputValue.mail}`
+    const handleSubmit = (e: any) => {
+        if (e) {
+            alert(`Thanks ${inputValue.name}`
             )
         }
     }
-    const handleInputChange = (event: any) => {
-        event.persist();
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        e.persist();
         setInputValue(inputs => ({
             ...inputs, 
-            [event.target.name]: event.target.value}));
+            [e.target.name]: e.target.value}));
     }
     return {
         handleSubmit,

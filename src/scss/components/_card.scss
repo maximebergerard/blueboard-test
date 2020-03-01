@@ -1,0 +1,34 @@
+/** 
+    Organism
+*/
+
+.o-card {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.o-card__reverse {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+/** 
+    Molecules
+*/
+
+.m-card__description {
+    width: 60%;
+    padding: 160px;
+    box-sizing: border-box;
+}
+
+.m-card__images {
+    @include flex-row();
+    width: 40%;
+    img {
+        width: 90%;
+    }
+}

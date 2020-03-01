@@ -6,7 +6,7 @@ export default () => {
     return (
         <header className="o-header">
             <h1 className="a-h1">You will need no other platform</h1>
-            <PlayButton/>
+            <PlayButton />
             <PrimaryButton text="try now"/>
             <img src={bckImage} alt="Background"/>
         </header>

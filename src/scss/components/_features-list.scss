@@ -1,0 +1,45 @@
+/** 
+    Organism
+*/
+
+.o-features__list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 160px 0;
+    position: relative;
+    background-color: var(--color-lightgray);
+    overflow: hidden;
+    @include flex-column();
+}
+
+/** 
+    Molecules
+*/
+
+.m-features__items {
+    width: 100%;
+    @include flex-space-evenly();
+}
+
+.m-features__images {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -20px;
+    @include flex-space-around();
+    img:nth-child(2) {
+        margin-top: -60px;
+    }
+}
+
+/** 
+    Atoms
+*/
+
+.a-features__list {
+    width: 460px;
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0;
+}

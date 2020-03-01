@@ -1,0 +1,40 @@
+/** 
+    Organism
+*/
+
+.o-footer {
+    width: 100%;
+    height: 400px;
+    @include flex-space-evenly();
+    > div {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+/** 
+    Molecules
+*/
+
+.m-footer__company {
+    img {
+        width: 120px;
+    }
+}
+
+.m-footer__support {
+    
+}
+
+/** 
+    Atoms
+*/
+
+.a-footer__list {
+    list-style: none;
+    margin: 16px 0;
+    padding: 0;
+    li {
+        margin: 10px 0;
+    }
+}

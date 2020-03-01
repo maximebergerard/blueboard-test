@@ -16,7 +16,6 @@ const useFeatureService = () => {
             .catch(error => setResult({ status: 'error', error}))
     }, [])
     
-    console.log(result);
     return result
 }
 

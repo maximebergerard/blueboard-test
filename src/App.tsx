@@ -20,7 +20,7 @@ function App() {
         title="Responsive design just need your tap ..."
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis alias nulla autem accusantium temporibus at odit asperiores quam sint, adipisci ad distinctio? Mollitia officiis labore corporis, numquam repellat earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis alias nulla autem accusantium temporibus at odit asperiores quam sint, adipisci ad distinctio? Mollitia officiis labore corporis, numquam repellat earum!"
         image={macbook}
-        className="o-card-reverse"
+        className="o-card__reverse"
       />
       <Form />
       <Footer />

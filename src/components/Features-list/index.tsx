@@ -13,28 +13,28 @@ const Features: React.FC<Props> = ({ title, category }) => {
     const service = useFeatureService()
 
     return (
-        <div className="o-features-list">
-            <div className="m-features-images">
+        <div className="o-features__list">
+            <div className="m-features__images">
                 <img src={penHolder} alt="pen holder"/>
                 <img src={earphones} alt="earphones"/>
             </div>
-            <span className="a-category">{category}</span>
-            <h3 className="a-h3-black">{title}</h3>
-            <div className="m-features-items">
+            <span className="category">{category}</span>
+            <h3>{title}</h3>
+            <div className="m-features__items">
                 {images.map(images => (
-                    <ul key={images} className="a-features-list">
+                    <ul key={images} className="a-features__list">
                         <li><img src={images} alt="features"/></li>
                     </ul>
                 ))}
             </div>
-            <div className="m-features-items">
+            <div className="m-features__items">
                 {service.status === 'loading' && <div>Loading...</div>}
                 {service.status === 'loaded' && service.payload
                     .slice(4, 7)
                     .map((feature => (
-                        <ul key={feature.id} className="a-features-list">
-                            <li className="a-list-title">{feature.title}</li>
-                            <li className="a-list-body">{feature.body}</li>
+                        <ul key={feature.id} className="a-features__list">
+                            <li className="list__title">{feature.title}</li>
+                            <li className="list__body">{feature.body}</li>
                         </ul>
                     )))}
                 {service.status === 'error' && (

@@ -1,15 +1,16 @@
 import React from 'react'
 import useSignUpForm from './signUp';
+import { Input } from '../index'
 
 export default () => {
     const signUp = useSignUpForm() 
     return (
         <div className="o-form">
-            <span className="a-category">contact us</span>
-            <h3 className="a-h3-white">Over 1000 designers are using ...</h3>
-            {/* we should use post method here */}
+            <span className="category">contact us</span>
+            <h3 className="text-white">Over 1000 designers are using ...</h3>
+            {/* we should use post method on form here */}
             <form method="get" onSubmit={signUp.handleSubmit}>
-                <input 
+                <Input 
                     type="text"
                     name="name"
                     placeholder="full name"
@@ -17,7 +18,7 @@ export default () => {
                     value={signUp.inputValue.name}
                     required
                 />
-                <input 
+                <Input 
                     type="email"
                     name="mail"
                     placeholder="your email"
@@ -25,7 +26,7 @@ export default () => {
                     value={signUp.inputValue.mail}
                     required
                 />
-                <input 
+                <Input 
                     type="password"
                     name="password"
                     placeholder="password"
@@ -34,7 +35,7 @@ export default () => {
                     required
                 />
                 <button 
-                    className="a-primary-button" 
+                    className="a-button__primary" 
                     type="submit"
                 >
                     try now

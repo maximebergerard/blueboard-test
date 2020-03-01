@@ -1,13 +1,31 @@
-@mixin text-title-h1 {
+h1 {
     font-size: 4.2rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
+    width: 600px;
 }
 
-@mixin text-title-h3 {
+h3 {
     font-size: 3rem;
     font-weight: 400;
     margin-top: 10px;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+p {
+    margin-top: 30px;
+    color: var(--color-gray);
+    line-height: 1.6rem;
+}
+
+a {
+    color: var(--color-gray);
+    text-decoration: none;
 }
 
 @mixin text-button {

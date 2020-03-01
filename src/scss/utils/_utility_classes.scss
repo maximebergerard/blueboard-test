@@ -1,0 +1,22 @@
+.category {
+    color: var(--color-pink);
+    @include text-category();
+}
+
+.list__title {
+    margin-bottom: 16px;
+    @include text-list-title();
+}
+
+.list__body {
+    line-height: 1.6rem;
+    @include text-list-body();
+}
+
+.text-black {
+    color: var(--color-black)
+}
+
+.text-white {
+    color: var(--color-white)
+}

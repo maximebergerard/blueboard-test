@@ -12,8 +12,18 @@ export type CardType = {
     className?: string;
 }
 
+// Input props type
+export type InputProps = {
+    type: string;
+    name: string;
+    placeholder: string;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    value: string;
+    required: boolean;
+}
+
 // Form interface
-export interface Input {
+export interface Form {
     name: string;
     mail: string;
     password: string;

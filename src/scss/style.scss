@@ -1,22 +1,13 @@
-// Mixins
-@import "mixins/typography";
-@import "mixins/utility";
+// Utils
+@import "./utils/mixins/utility";
+@import "./utils/variables/colors";
+@import "./utils/typography";
+@import "./utils/utility_classes.scss";
 
-// Variables
-@import "variables/colors";
-
-// Atomes
-@import "atoms/texts";
-@import "atoms/buttons";
-@import "atoms/lists";
-@import "atoms/inputs";
-
-// Molecules
-@import "molecules/card-details";
-@import "molecules/features";
-
-// Organisms
-@import "organisms/header";
-@import "organisms/card";
-@import "organisms/features-list";
-@import "organisms/form";
+// Components
+@import "components/buttons";
+@import "components/header";
+@import "components/footer";
+@import "components/card";
+@import "components/features-list";
+@import "components/form";
