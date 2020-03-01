@@ -1,6 +1,6 @@
 import React from 'react'
-import { PrimaryButton, PlayButton } from '../../index'
-import bckImage from '../../../images/background-header.png';
+import { PrimaryButton, PlayButton } from '../index'
+import bckImage from '../../images/background-header.png';
 
 export default () => {
     return (

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Feature, Service } from '../../../interfaces'
+import { Feature, Service } from '../../interfaces'
 
 export type Features = Feature[]
 

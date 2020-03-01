@@ -1,6 +1,6 @@
 import React from 'react'
 import useFeatureService from './api'
-import { feature1, feature2, feature3, penHolder, earphones } from '../../../images'
+import { feature1, feature2, feature3, penHolder, earphones } from '../../images'
 
 const images = [feature1, feature2, feature3]
 

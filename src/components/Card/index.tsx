@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardType } from '../../../interfaces'
+import { CardType } from '../../interfaces'
 
 export default (props: CardType) => {
     return (

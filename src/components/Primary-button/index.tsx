@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonType } from '../../../interfaces'
+import { ButtonType } from '../../interfaces'
 
 
 export default (props: ButtonType) => {

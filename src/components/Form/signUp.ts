@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Input } from '../../../interfaces'
+import { Input } from '../../interfaces'
 
 const useSignUpForm = () => {
     const [inputValue, setInputValue] = useState<Input>({
@@ -9,7 +9,7 @@ const useSignUpForm = () => {
     })
     const handleSubmit = (event: any) => {
         if (event) {
-            alert(`User Created!
+            alert(`Designer Created !
                 Name: ${inputValue.name}
                 Email: ${inputValue.mail}`
             )
