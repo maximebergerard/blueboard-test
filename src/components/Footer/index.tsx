@@ -1,6 +1,6 @@
 import React from 'react'
 import { Input } from '../index'
-import { logo } from '../../images'
+import { logo, iconMail } from '../../images'
 import useSignUpForm from '../Form/signUp';
 
 export default () => {
@@ -22,7 +22,7 @@ export default () => {
                     <li><a href={href}>Contact US</a></li>
                 </ul>
             </div>
-            <div className="aboutUs">
+            <div className="m-footer__aboutUs">
                 <h4 className="a-h4">About Us</h4>
                 <ul className="a-footer__list list__body">
                     <li><a href={href}>About Us</a></li>
@@ -30,7 +30,7 @@ export default () => {
                     <li><a href={href}>Contact US</a></li>
                 </ul>
             </div>
-            <div className="newsletter">
+            <div className="m-footer__newsletter">
                 <h4 className="a-h4">Get newsletter</h4>
                 <Input
                     type="email"
@@ -40,6 +40,9 @@ export default () => {
                     value={signUp.inputValue.mail}
                     required={false}
                 />
+                <div className="a-footer__iconMail">
+                    <img src={iconMail} alt="mail icon"/>
+                </div>
             </div>
         </footer>
     )
