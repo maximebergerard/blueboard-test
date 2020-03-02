@@ -25,3 +25,10 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Constraints
+
+- Developed in React, React Hooks and React TypeScript 
+- Features are fetch from the api https://jsonplaceholder.typicode.com/posts?userId=1
+- We can retrieve the datas from the form
+- Style in scss
